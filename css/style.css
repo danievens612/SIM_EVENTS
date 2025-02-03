@@ -2931,4 +2931,26 @@ ol {
 		margin-top: -970px;
 		background-position: top 0 left 19%;
 	}
+
+	/* Base styles for the logo (applies to all screen sizes) */
+.header__logo img {
+    width: 100%;  /* Makes the logo fill the available width */
+    max-width: 200px;  /* Limits the maximum width of the logo (you can adjust this value) */
+    height: auto;  /* Maintains the aspect ratio of the logo */
+}
+
+/* Mobile view styles (screen width 600px or less) */
+@media screen and (max-width: 600px) {
+    .header__logo img {
+        max-width: 150px;  /* Reduces the size for smaller screens (optional) */
+    }
+}
+
+/* Tablet view styles (screen width between 600px and 1024px) */
+@media screen and (max-width: 1024px) {
+    .header__logo img {
+        max-width: 180px;  /* Adjust the logo size for tablets (optional) */
+    }
+}
+	
 }	
