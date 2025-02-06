@@ -2953,4 +2953,30 @@ ol {
     }
 }
 	
+}
+
+
+
+.image-gallery {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    white-space: nowrap;
+    position: relative;
+}
+
+.image-gallery img {
+    width: auto; /* Maintain aspect ratio */
+    height: 200px; /* Adjust as needed */
+    margin-right: 10px; /* Space between images */
+    animation: scroll 10s linear infinite;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
 }	
