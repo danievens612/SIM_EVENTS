@@ -107,6 +107,98 @@ ol {
 	margin: 0;
 }
 
+
+/* Default styles for the body */
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+
+
+
+/* Set the background gradient */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(45deg, #ff6f61, #ffbc00, #00bcd4, #8e44ad);
+    background-size: 400% 400%;
+    animation: gradientMove 10s ease infinite;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Create the animation for moving gradient */
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Optional: Add some text or content styling */
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 3em;
+    margin-top: 20%;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    animation: textGlow 1.5s infinite alternate;
+}
+
+@keyframes textGlow {
+    0% {
+        text-shadow: 0 0 5px rgba(255, 255, 255, 0.8), 0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px rgba(255, 255, 255, 0.2);
+    }
+    100% {
+        text-shadow: 0 0 20px rgba(255, 255, 255, 1), 0 0 30px rgba(255, 255, 255, 0.8), 0 0 50px rgba(255, 255, 255, 0.5);
+    }
+}
+
+/* Button styling for event call-to-action */
+.button {
+    display: inline-block;
+    background: linear-gradient(45deg, #ff6f61, #ffbc00);
+    padding: 12px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Adding some sparkle effect to the background */
+@keyframes sparkle {
+    0% {
+        box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.8);
+    }
+    100% {
+        box-shadow: 0px 0px 100px rgba(255, 255, 255, 1);
+    }
+}
+
+.sparkle {
+    animation: sparkle 1s infinite alternate;
+}
+
+
+
+
+
+
 /*---------------------
   Helper CSS
 -----------------------*/
@@ -2931,31 +3023,7 @@ ol {
 		margin-top: -970px;
 		background-position: top 0 left 19%;
 	}
-
-	/* Base styles for the logo (applies to all screen sizes) */
-.header__logo img {
-    width: 100%;  /* Makes the logo fill the available width */
-    max-width: 200px;  /* Limits the maximum width of the logo (you can adjust this value) */
-    height: auto;  /* Maintains the aspect ratio of the logo */
-}
-
-/* Mobile view styles (screen width 600px or less) */
-@media screen and (max-width: 600px) {
-    .header__logo img {
-        max-width: 150px;  /* Reduces the size for smaller screens (optional) */
-    }
-}
-
-/* Tablet view styles (screen width between 600px and 1024px) */
-@media screen and (max-width: 1024px) {
-    .header__logo img {
-        max-width: 180px;  /* Adjust the logo size for tablets (optional) */
-    }
-}
-	
-}
-
-
+}	
 
 .image-gallery {
     display: flex;
@@ -2979,4 +3047,4 @@ ol {
     to {
         transform: translateX(-100%);
     }
-}	
+}
