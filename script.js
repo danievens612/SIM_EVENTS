@@ -1,23 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () {
-    // --- Stars Effect ---
-    const starContainer = document.createElement('div');
-    starContainer.classList.add('stars');
-    document.body.appendChild(starContainer);
-
-    // Generate 100 stars
-    for (let i = 0; i < 100; i++) {
-        const star = document.createElement('div');
-        star.classList.add('star');
-        star.style.position = 'absolute';
-        star.style.width = `${Math.random() * 3 + 1}px`; // Random size between 1 and 3px
-        star.style.height = star.style.width;
-        star.style.backgroundColor = '#fff';
-        star.style.borderRadius = '50%';
-        star.style.top = `${Math.random() * window.innerHeight}px`; // Random vertical position
-        star.style.left = `${Math.random() * window.innerWidth}px`; // Random horizontal position
-        star.style.animation = `starAnimation ${Math.random() * 50 + 30}s linear infinite`;
-        starContainer.appendChild(star);
-    }
+document.addEventListener('DOMContentLoaded', function () 
 
     // --- Bubbles Effect ---
     const bubbleContainer = document.createElement('div');
@@ -88,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function () {
             border-radius: 50%;
             background: rgba(255, 255, 255, 0.7);
             opacity: 0;
-            animation: bubbleAnim 6s ease-in-out infinite;
+            animation: bubbleAnim 2s ease-in-out infinite;
         }
         
         @keyframes bubbleAnim {
