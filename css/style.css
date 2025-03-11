@@ -1,10 +1,8 @@
 /******************************************************************
-  Template Name: DJoz
-  Description:  DJoz Music HTML Template
-  Author: Colorlib
-  Author URI: https://colorlib.com
-  Version: 1.0
-  Created: Colorlib
+  Template Name: SIM EVENTS
+  Description:  SIM EVENTS HTML Template
+ GIT HUB URI:https://github.com/danievens612
+  Created: DANIEVENS612 ( GITHUB ID )
 ******************************************************************/
 
 /*------------------------------------------------------------------
@@ -3047,4 +3045,72 @@ h1 {
     to {
         transform: translateX(-100%);
     }
+}
+
+
+@media (max-width: 768px) {
+	body {
+	  padding: 10px;
+	}
+	.container {
+	  width: 100%;
+	  margin: 0 auto;
+	}
+  }
+  
+  
+ .body {
+	overflow-x: hidden;
+  }
+	
+  .img {
+    max-width: 100%;
+    height: auto;
+}
+@media screen and (max-width: 768px) {
+    /* Adjust the container width */
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+   
+
+
+
+/* Prevent h1 from overflowing on smaller screens */
+.h1 {
+    font-size: 5vw; /* Adjusts size based on screen width */
+    text-align: center;
+    word-wrap: break-word;
+}
+
+/* Ensure body does not zoom in/out automatically */
+.body {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevents unwanted horizontal scrolling */
+}
+
+
+
+/* Ensures video containers do not exceed screen width */
+.video-container {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.video-container video {
+    width: 100%;
+    max-width: 100%;
+    height: auto; /* Maintains aspect ratio */
+}
+
+/* Remove unnecessary scrolling */
+.body {
+    overflow-x: hidden;
 }
