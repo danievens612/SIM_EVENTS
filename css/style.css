@@ -1,8 +1,10 @@
 /******************************************************************
-  Template Name: SIM EVENTS
-  Description:  SIM EVENTS HTML Template
- GIT HUB URI:https://github.com/danievens612
-  Created: DANIEVENS612 ( GITHUB ID )
+  Template Name: DJoz
+  Description:  DJoz Music HTML Template
+  Author: Colorlib
+  Author URI: https://colorlib.com
+  Version: 1.0
+  Created: Colorlib
 ******************************************************************/
 
 /*------------------------------------------------------------------
@@ -104,98 +106,6 @@ ol {
 	padding: 0;
 	margin: 0;
 }
-
-
-/* Default styles for the body */
-body {
-    margin: 0;
-    height: 100vh;
-}
-
-
-
-
-/* Set the background gradient */
-body {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    background: linear-gradient(45deg, #ff6f61, #ffbc00, #00bcd4, #8e44ad);
-    background-size: 400% 400%;
-    animation: gradientMove 10s ease infinite;
-    font-family: 'Arial', sans-serif;
-}
-
-/* Create the animation for moving gradient */
-@keyframes gradientMove {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
-/* Optional: Add some text or content styling */
-h1 {
-    text-align: center;
-    color: white;
-    font-size: 3em;
-    margin-top: 20%;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    animation: textGlow 1.5s infinite alternate;
-}
-
-@keyframes textGlow {
-    0% {
-        text-shadow: 0 0 5px rgba(255, 255, 255, 0.8), 0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px rgba(255, 255, 255, 0.2);
-    }
-    100% {
-        text-shadow: 0 0 20px rgba(255, 255, 255, 1), 0 0 30px rgba(255, 255, 255, 0.8), 0 0 50px rgba(255, 255, 255, 0.5);
-    }
-}
-
-/* Button styling for event call-to-action */
-.button {
-    display: inline-block;
-    background: linear-gradient(45deg, #ff6f61, #ffbc00);
-    padding: 12px 25px;
-    border-radius: 50px;
-    text-decoration: none;
-    color: white;
-    font-size: 1.2em;
-    text-transform: uppercase;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.button:hover {
-    transform: scale(1.1);
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
-}
-
-/* Adding some sparkle effect to the background */
-@keyframes sparkle {
-    0% {
-        box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.8);
-    }
-    100% {
-        box-shadow: 0px 0px 100px rgba(255, 255, 255, 1);
-    }
-}
-
-.sparkle {
-    animation: sparkle 1s infinite alternate;
-}
-
-
-
-
-
 
 /*---------------------
   Helper CSS
@@ -3021,96 +2931,4 @@ h1 {
 		margin-top: -970px;
 		background-position: top 0 left 19%;
 	}
-}	
-
-.image-gallery {
-    display: flex;
-    overflow: hidden;
-    width: 100%;
-    white-space: nowrap;
-    position: relative;
-}
-
-.image-gallery img {
-    width: auto; /* Maintain aspect ratio */
-    height: 200px; /* Adjust as needed */
-    margin-right: 10px; /* Space between images */
-    animation: scroll 10s linear infinite;
-}
-
-@keyframes scroll {
-    from {
-        transform: translateX(100%);
-    }
-    to {
-        transform: translateX(-100%);
-    }
-}
-
-
-@media (max-width: 768px) {
-	body {
-	  padding: 10px;
-	}
-	.container {
-	  width: 100%;
-	  margin: 0 auto;
-	}
-  }
-  
-  
- .body {
-	overflow-x: hidden;
-  }
-	
-  .img {
-    max-width: 100%;
-    height: auto;
-}
-@media screen and (max-width: 768px) {
-    /* Adjust the container width */
-    .container {
-        width: 100%;
-        padding: 10px;
-    }
-
-   
-
-
-
-/* Prevent h1 from overflowing on smaller screens */
-.h1 {
-    font-size: 5vw; /* Adjusts size based on screen width */
-    text-align: center;
-    word-wrap: break-word;
-}
-
-/* Ensure body does not zoom in/out automatically */
-.body {
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden; /* Prevents unwanted horizontal scrolling */
-}
-
-
-
-/* Ensures video containers do not exceed screen width */
-.video-container {
-    width: 100%;
-    max-width: 100%;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-}
-
-.video-container video {
-    width: 100%;
-    max-width: 100%;
-    height: auto; /* Maintains aspect ratio */
-}
-
-/* Remove unnecessary scrolling */
-.body {
-    overflow-x: hidden;
 }
